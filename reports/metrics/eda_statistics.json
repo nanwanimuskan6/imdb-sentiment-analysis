@@ -1,0 +1,72 @@
+{
+  "definitions": {
+    "duplicates": "Exact text, extra occurrences after the first; nulls excluded.",
+    "empty": "Non-null review empty after whitespace stripping for inspection only.",
+    "lengths": "Original Unicode character count and whitespace-separated word count; nulls excluded.",
+    "percentiles": "Linear interpolation.",
+    "overlap": "Number of distinct exact texts shared by a pair of splits."
+  },
+  "official_splits": {
+    "train": {
+      "samples": 25000,
+      "class_counts": {
+        "neg": 12500,
+        "pos": 12500
+      },
+      "null_reviews": 0,
+      "empty_reviews": 0,
+      "duplicate_reviews": 96,
+      "duplicate_text_groups": 92,
+      "lengths": {
+        "characters": {
+          "min": 52,
+          "max": 13704,
+          "mean": 1325.06964,
+          "median": 979.0,
+          "p90": 2617.0,
+          "p95": 3432.0499999999993
+        },
+        "words": {
+          "min": 10,
+          "max": 2470,
+          "mean": 233.7872,
+          "median": 174.0,
+          "p90": 458.0,
+          "p95": 598.0
+        }
+      }
+    },
+    "test": {
+      "samples": 25000,
+      "class_counts": {
+        "neg": 12500,
+        "pos": 12500
+      },
+      "null_reviews": 0,
+      "empty_reviews": 0,
+      "duplicate_reviews": 199,
+      "duplicate_text_groups": 191,
+      "lengths": {
+        "characters": {
+          "min": 32,
+          "max": 12988,
+          "mean": 1293.7924,
+          "median": 962.0,
+          "p90": 2544.100000000002,
+          "p95": 3333.0
+        },
+        "words": {
+          "min": 4,
+          "max": 2278,
+          "mean": 228.52668,
+          "median": 172.0,
+          "p90": 444.0,
+          "p95": 582.0499999999993
+        }
+      }
+    }
+  },
+  "official_text_overlap": {
+    "train__test": 123
+  }
+}

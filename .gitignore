@@ -1,0 +1,46 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.ruff_cache/
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Generated data and artifacts
+/data/raw/*
+/data/processed/*
+/data/splits/*
+/artifacts/classical/*
+/artifacts/transformer/*
+/reports/metrics/*
+!/reports/metrics/*.json
+/reports/errors/*
+!**/.gitkeep
+.cache/
+logs/
+runs/
+wandb/
+
+# Version small evidence reports; keep raw review exports and model weights local.
+!/reports/errors/final_app_examples.json
+!/artifacts/transformer/training_config.json
+*.tmp
+*.log
+*.bak
+*.safetensors
+*.pt
+*.pth
+*.joblib

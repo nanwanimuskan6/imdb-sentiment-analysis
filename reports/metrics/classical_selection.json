@@ -1,0 +1,159 @@
+{
+  "winner": "linear_svc",
+  "criterion": "Validation F1, then validation accuracy",
+  "validation": {
+    "logistic_regression": {
+      "accuracy": 0.8914,
+      "precision": 0.8847817538340542,
+      "recall": 0.9,
+      "f1": 0.892325996430696,
+      "confusion_matrix": [
+        [
+          2207,
+          293
+        ],
+        [
+          250,
+          2250
+        ]
+      ],
+      "classification_report": {
+        "negative": {
+          "precision": 0.8982498982498982,
+          "recall": 0.8828,
+          "f1-score": 0.8904579382691143,
+          "support": 2500.0
+        },
+        "positive": {
+          "precision": 0.8847817538340542,
+          "recall": 0.9,
+          "f1-score": 0.892325996430696,
+          "support": 2500.0
+        },
+        "accuracy": 0.8914,
+        "macro avg": {
+          "precision": 0.8915158260419762,
+          "recall": 0.8914,
+          "f1-score": 0.8913919673499051,
+          "support": 5000.0
+        },
+        "weighted avg": {
+          "precision": 0.8915158260419761,
+          "recall": 0.8914,
+          "f1-score": 0.8913919673499051,
+          "support": 5000.0
+        }
+      }
+    },
+    "linear_svc": {
+      "accuracy": 0.907,
+      "precision": 0.906187624750499,
+      "recall": 0.908,
+      "f1": 0.9070929070929071,
+      "confusion_matrix": [
+        [
+          2265,
+          235
+        ],
+        [
+          230,
+          2270
+        ]
+      ],
+      "classification_report": {
+        "negative": {
+          "precision": 0.9078156312625251,
+          "recall": 0.906,
+          "f1-score": 0.9069069069069069,
+          "support": 2500.0
+        },
+        "positive": {
+          "precision": 0.906187624750499,
+          "recall": 0.908,
+          "f1-score": 0.9070929070929071,
+          "support": 2500.0
+        },
+        "accuracy": 0.907,
+        "macro avg": {
+          "precision": 0.9070016280065121,
+          "recall": 0.907,
+          "f1-score": 0.9069999069999071,
+          "support": 5000.0
+        },
+        "weighted avg": {
+          "precision": 0.907001628006512,
+          "recall": 0.907,
+          "f1-score": 0.9069999069999071,
+          "support": 5000.0
+        }
+      }
+    }
+  },
+  "fit_seconds": {
+    "logistic_regression": 1.6731471000093734,
+    "linear_svc": 1.3361842000012984
+  },
+  "vectorizer_fit_and_validation_transform_seconds": 16.50787620000483,
+  "vocabulary_size": 368182,
+  "model_parameters": {
+    "logistic_regression": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 3000,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": 42,
+      "solver": "liblinear",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "linear_svc": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": "auto",
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "loss": "squared_hinge",
+      "max_iter": 10000,
+      "multi_class": "ovr",
+      "penalty": "l2",
+      "random_state": 42,
+      "tol": 0.0001,
+      "verbose": 0
+    }
+  },
+  "tfidf_parameters": {
+    "lowercase": true,
+    "strip_accents": "unicode",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "min_df": 2,
+    "max_df": 0.95,
+    "max_features": null,
+    "stop_words": null,
+    "norm": "l2"
+  },
+  "versions": {
+    "scikit-learn": "1.9.0",
+    "numpy": "2.5.3",
+    "joblib": "1.6.0",
+    "datasets": "4.8.5"
+  },
+  "phase2_metadata_sha256": "f344ef8ce61219becc0b3951ffb22a26303236ebff0f70f72f6e503b2cb94613",
+  "known_exact_text_overlap": {
+    "train__validation": 36,
+    "train__test": 103,
+    "validation__test": 20
+  },
+  "training_rows": 20000,
+  "validation_rows": 5000,
+  "refit_on_train_plus_validation": false
+}

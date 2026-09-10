@@ -1,0 +1,19 @@
+﻿# Dataset loading; Hub pin preserves support for load_dataset("imdb").
+datasets==4.8.5
+huggingface-hub==0.36.0
+# Phase 2 descriptive statistics and plots (NumPy was already installed via datasets).
+numpy==2.5.3
+matplotlib==3.11.1
+
+# Phase 3 sparse classical models and persisted artifacts.
+scikit-learn==1.9.0
+joblib==1.6.0
+
+# Phase 4: CUDA 12.8 PyTorch build for the RTX 2050, plus Hugging Face training.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+transformers==4.57.3
+accelerate==1.12.0
+
+# Phase 5: local sentiment prediction interface.
+streamlit==1.63.0

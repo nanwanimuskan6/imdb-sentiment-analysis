@@ -1,0 +1,146 @@
+[
+  {
+    "review": "worst",
+    "binary": {
+      "prediction": "Negative",
+      "confidence": 0.9651972055435181,
+      "positive_probability": 0.03480283170938492,
+      "negative_probability": 0.9651972055435181
+    },
+    "nuanced": {
+      "sentiment": "Uncertain / Insufficient evidence",
+      "evidence_source": "insufficient",
+      "general_evidence": {
+        "positive": 0.0013116009067744017,
+        "negative": 0.3905404806137085,
+        "unsure": 0.013377029448747635,
+        "supported": false
+      },
+      "aspects": [],
+      "weak_evidence": true,
+      "units_limited": false,
+      "note": "Experimental zero-shot interpretation; evidence thresholds are uncalibrated. Explicit aspect-name evidence required; implicit aspects may be missed. Up to 24 clauses, 256 tokens per NLI pair. No IMDb aspect benchmark evaluation."
+    },
+    "irony": {
+      "flag": "Unlikely",
+      "irony_probability": 0.4986913800239563,
+      "note": "Experimental TweetEval irony model; not validated on movie reviews. First 256 tokens."
+    }
+  },
+  {
+    "review": "The acting was excellent and the cinematography was beautiful, but the story was slow and the ending disappointed me.",
+    "binary": {
+      "prediction": "Negative",
+      "confidence": 0.9644525647163391,
+      "positive_probability": 0.03554742410778999,
+      "negative_probability": 0.9644525647163391
+    },
+    "nuanced": {
+      "sentiment": "Mixed",
+      "evidence_source": "aspects",
+      "general_evidence": null,
+      "aspects": [
+        {
+          "aspect": "Acting",
+          "sentiment": "Positive",
+          "evidence": [
+            {
+              "sentiment": "Positive",
+              "text": "The acting was excellent",
+              "mention_score": 0.9365550875663757,
+              "entailment_score": 0.9896907806396484
+            }
+          ]
+        },
+        {
+          "aspect": "Cinematography",
+          "sentiment": "Positive",
+          "evidence": [
+            {
+              "sentiment": "Positive",
+              "text": "the cinematography was beautiful",
+              "mention_score": 0.9660148024559021,
+              "entailment_score": 0.9829477667808533
+            }
+          ]
+        },
+        {
+          "aspect": "Ending",
+          "sentiment": "Negative",
+          "evidence": [
+            {
+              "sentiment": "Negative",
+              "text": "the ending disappointed me.",
+              "mention_score": 0.8047631978988647,
+              "entailment_score": 0.9745595455169678
+            }
+          ]
+        }
+      ],
+      "weak_evidence": false,
+      "units_limited": false,
+      "note": "Experimental zero-shot interpretation; evidence thresholds are uncalibrated. Explicit aspect-name evidence required; implicit aspects may be missed. Up to 24 clauses, 256 tokens per NLI pair. No IMDb aspect benchmark evaluation."
+    },
+    "irony": {
+      "flag": "Unlikely",
+      "irony_probability": 0.2421262115240097,
+      "note": "Experimental TweetEval irony model; not validated on movie reviews. First 256 tokens."
+    }
+  },
+  {
+    "review": "it was ok ok i m confused what i felt",
+    "binary": {
+      "prediction": "Negative",
+      "confidence": 0.9579110145568848,
+      "positive_probability": 0.04208897054195404,
+      "negative_probability": 0.9579110145568848
+    },
+    "nuanced": {
+      "sentiment": "Uncertain / Insufficient evidence",
+      "evidence_source": "insufficient",
+      "general_evidence": {
+        "positive": 0.027932580560445786,
+        "negative": 0.05001962557435036,
+        "unsure": 0.45195895433425903,
+        "supported": false
+      },
+      "aspects": [],
+      "weak_evidence": true,
+      "units_limited": false,
+      "note": "Experimental zero-shot interpretation; evidence thresholds are uncalibrated. Explicit aspect-name evidence required; implicit aspects may be missed. Up to 24 clauses, 256 tokens per NLI pair. No IMDb aspect benchmark evaluation."
+    },
+    "irony": {
+      "flag": "Unlikely",
+      "irony_probability": 0.1394372582435608,
+      "note": "Experimental TweetEval irony model; not validated on movie reviews. First 256 tokens."
+    }
+  },
+  {
+    "review": "Amazing movie. I especially loved wasting two hours of my life waiting for something interesting to happen.",
+    "binary": {
+      "prediction": "Positive",
+      "confidence": 0.9829436540603638,
+      "positive_probability": 0.9829436540603638,
+      "negative_probability": 0.017056411132216454
+    },
+    "nuanced": {
+      "sentiment": "Positive",
+      "evidence_source": "overall_nli",
+      "general_evidence": {
+        "positive": 0.9849171042442322,
+        "negative": 0.0020555562805384398,
+        "unsure": 0.04993804544210434,
+        "supported": true
+      },
+      "aspects": [],
+      "weak_evidence": false,
+      "units_limited": false,
+      "note": "Experimental zero-shot interpretation; evidence thresholds are uncalibrated. Explicit aspect-name evidence required; implicit aspects may be missed. Up to 24 clauses, 256 tokens per NLI pair. No IMDb aspect benchmark evaluation."
+    },
+    "irony": {
+      "flag": "Likely",
+      "irony_probability": 0.8912986516952515,
+      "note": "Experimental TweetEval irony model; not validated on movie reviews. First 256 tokens."
+    }
+  }
+]

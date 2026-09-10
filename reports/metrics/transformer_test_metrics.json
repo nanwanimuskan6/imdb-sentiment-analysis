@@ -1,0 +1,45 @@
+{
+  "accuracy": 0.90652,
+  "precision": 0.8827295322738571,
+  "recall": 0.9376,
+  "f1": 0.9093377817434146,
+  "confusion_matrix": [
+    [
+      10943,
+      1557
+    ],
+    [
+      780,
+      11720
+    ]
+  ],
+  "classification_report": {
+    "negative": {
+      "precision": 0.9334641303420627,
+      "recall": 0.87544,
+      "f1-score": 0.9035214465590554,
+      "support": 12500.0
+    },
+    "positive": {
+      "precision": 0.8827295322738571,
+      "recall": 0.9376,
+      "f1-score": 0.9093377817434146,
+      "support": 12500.0
+    },
+    "accuracy": 0.90652,
+    "macro avg": {
+      "precision": 0.9080968313079598,
+      "recall": 0.90652,
+      "f1-score": 0.906429614151235,
+      "support": 25000.0
+    },
+    "weighted avg": {
+      "precision": 0.9080968313079598,
+      "recall": 0.90652,
+      "f1-score": 0.9064296141512351,
+      "support": 25000.0
+    }
+  },
+  "test_evaluation_count": 1,
+  "best_checkpoint": "C:\\Users\\VICTUS\\OneDrive\\Desktop\\imdb-sentiment-analysis\\artifacts\\transformer\\checkpoints\\checkpoint-2500"
+}

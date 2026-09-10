@@ -1,0 +1,43 @@
+{
+  "model_name": "distilbert-base-uncased",
+  "max_length": 256,
+  "train_batch_size": 4,
+  "eval_batch_size": 8,
+  "gradient_accumulation_steps": 4,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "epochs": 3,
+  "seed": 42,
+  "max_grad_norm": 1.0,
+  "effective_batch_size": 16,
+  "hardware": {
+    "torch_version": "2.11.0+cu128",
+    "cuda_available": true,
+    "cuda_version": "12.8",
+    "gpu_name": "NVIDIA GeForce RTX 2050",
+    "gpu_vram_gib": 3.99951171875,
+    "fp16": true
+  },
+  "oom_changes": [],
+  "phase2_metadata_sha256": "f344ef8ce61219becc0b3951ffb22a26303236ebff0f70f72f6e503b2cb94613",
+  "known_exact_text_overlap": {
+    "train__validation": 36,
+    "train__test": 103,
+    "validation__test": 20
+  },
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.3",
+    "accelerate": "1.12.0",
+    "datasets": "4.8.5"
+  },
+  "gradient_checkpointing": true,
+  "padding": "dynamic, multiple of 8",
+  "train_sequences_at_max_length": 8904,
+  "length_note": "At-limit sequences include exact fits and truncated reviews; this is not an exact truncation count.",
+  "split_sizes": {
+    "train": 20000,
+    "validation": 5000,
+    "test": 25000
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "seconds": 1.137905600000522,
+  "peak_allocated_gib": 1.2816071510314941,
+  "peak_reserved_gib": 1.369140625,
+  "train_batch_size": 4,
+  "eval_batch_size": 8,
+  "max_length": 256,
+  "fp16": true
+}
